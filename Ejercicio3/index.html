@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3 - Manuel Sánchez</title>
+</head>
+<body>
+    <script>
+    // Tamaño del tablero.
+    let tamaño = 7;
+    let tablero = "";
+
+    // Recorre las filas.
+    for (let fila = 0; fila < tamaño; fila++) {
+    // Recorre las columnas.
+    for (let columna = 0; columna < tamaño; columna++) {
+        //Calculamos donde va el "#".
+        if ((fila + columna) % 2 == 0) {
+        tablero += " ";
+        } else {
+        tablero += "#";
+        }
+    }
+    // Añadir salto de línea al final de cada fila.
+    tablero += "\n";
+    }
+
+    // Mostramos en consola.
+    console.log(tablero);
+    </script>
+</body>
+</html>

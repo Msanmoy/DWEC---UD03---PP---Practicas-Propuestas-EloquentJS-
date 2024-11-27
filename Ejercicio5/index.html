@@ -14,5 +14,42 @@
         
     </main>
     
+
+    <script>
+
+        console.log(contarFs(prompt("Introduce una palabra: ")));
+
+        function contarFs(palabra){
+            var contador = 0;  // Inicialización correcta
+            var letra = "F";
+            
+            for(let i = 0; i < palabra.length; i++){
+                if(palabra[i] === letra){
+                    contador = contador + 1;
+                }
+            }
+
+            return contador;
+        };
+
+        var letra = prompt("Introduce la letra a contar: ");
+        var frase = prompt("Introduce la frase en la que buscar la letra:");
+
+
+        function contarCaracteres(letra, palabra){
+            var contador = 0;
+            
+            for(let i = 0; i < palabra.length; i++){
+                if(palabra[i] === letra){
+                    contador = contador + 1;
+                }
+            }
+
+            return contador;
+        };
+
+        console.log(contarCaracteres(letra, frase));
+
+    </script>
 </body>
 </html>
